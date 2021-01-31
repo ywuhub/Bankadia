@@ -1,10 +1,20 @@
-import './App.css';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <div class="logo">
+        <h1 id="bank">💸 Bankadia</h1>
+      </div>
+
+      <div class="content">
+        <h2>CSS Template</h2>
+        <p>A topnav, content and a footer.</p>
+      </div>
+
+      <div class="footer">
+        <p>Footer</p>
+      </div> 
     </div>
   );
 }
