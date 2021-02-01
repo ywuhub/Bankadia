@@ -41,9 +41,16 @@
 /* Login Section */
 .login {
     background-color: #ddd;
-    padding: 10px;
+    padding: 20px;
 }
 
+.container-a {
+    float: left;
+    width: 50%;
+    padding-left: 25%;
+}
+
+/* Footer Section */
 .footer {
 background-color: #f1f1f1;
 padding: 10px;

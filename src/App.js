@@ -16,7 +16,19 @@ function App() {
       </div>
 
       <div class="login">
-        
+        <div class="container-a">
+          <div class="greeting">
+            <h2>Hello World!</h2>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+        <div class="container-a">
+          <div class="input">
+          <h2>Hello World!</h2>
+          </div>
+        </div>
       </div>
 
       <div class="footer">
