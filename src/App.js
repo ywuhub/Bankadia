@@ -6,10 +6,17 @@ function App() {
       <div class="logo">
         <h1 id="bank">💸 Bankadia</h1>
       </div>
+      
+      <div class="topnav">
+        <a href="#personal">Personal</a>
+        <a href="#business">Business</a>
+        <a href="#investing">Investing</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
 
-      <div class="content">
-        <h2>CSS Template</h2>
-        <p>A topnav, content and a footer.</p>
+      <div class="login">
+        
       </div>
 
       <div class="footer">
