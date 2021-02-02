@@ -16,18 +16,12 @@ function App() {
       </div>
 
       <div class="login">
-        <div class="container-a">
-          <div class="greeting">
-            <h2>Hello World!</h2>
-            <p>
-              
-            </p>
+        <div class="row">
+          <div class="column">
+            <h3 class="greeting">Welcome to Bankadia!</h3>
+            <blockquote class="quote">We buy high, so you can sell low.</blockquote>
           </div>
-        </div>
-        <div class="container-a">
-          <div class="input">
-          <h2>Hello World!</h2>
-          </div>
+          <div class="column">Test</div>
         </div>
       </div>
 
