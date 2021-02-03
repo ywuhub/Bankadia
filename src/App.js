@@ -1,6 +1,8 @@
 import './App.css'
 
 function App() {
+  const year = new Date().getFullYear();
+
   return (
     <div className="App">
       <div class="logo">
@@ -49,8 +51,8 @@ function App() {
 
       <div class="footer-basic">
         <footer>
-            <div class="social"><a href="https://github.com/ywuhub" target="_blank" rel="noreferrer"><i class="icon ion-social-instagram"></i></a></div>
-            <p class="copyright">Bankadia © | Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
+          <a href="https://github.com/ywuhub"><i class="fa fa-github"></i></a>
+          <p class="copyright">Bankadia © {year}| Created by Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
         </footer>
     </div> 
     </div>
