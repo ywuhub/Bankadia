@@ -40,19 +40,21 @@ function App() {
       </div>
 
       <div class="introduction">
-        <div class="row">
-          <div class="column">
-
+        <div class="row-a">
+          <div class="column-a">
+            <p class="intro-header">We are the future of banking.</p>
+            <p class="intro-paragraph">The only interest you will be getting here is our passion to take your money and we will stop at nothing, until our goals are achieved. </p>
           </div>
-          <div class="column">
+          <div class="column-a">
+
           </div>
         </div>
       </div>
 
       <div class="footer-basic">
         <footer>
-          <a href="https://github.com/ywuhub"><i class="fa fa-github"></i></a>
-          <p class="copyright">Bankadia © {year}| Created by Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
+          <center><a href="https://github.com/ywuhub" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a></center>
+          <p class="copyright">Bankadia LLC © {year}| Created by Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
         </footer>
     </div> 
     </div>

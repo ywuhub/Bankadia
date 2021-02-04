@@ -63,6 +63,22 @@
     clear: both;
 }
 
+.column-a {
+    float: left;
+    width: 50%;
+}
+
+.row-a {
+    padding-left: 25%;
+    color: rgb(0, 0, 0);
+}
+
+.row-a:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .greeting {
     font-size: 40px;
     margin-bottom: 0px;
@@ -92,25 +108,33 @@ p { word-break: normal }
     padding: 50px;
 }
 
+.intro-header {
+    font-size: 25px;
+}
+
+.intro-paragraph {
+    font-size: 18px;
+}
+
 /* Footer Section */
 .footer-basic {
-    padding:20px 0;
-    background-color:#ffffff;
-    color:#4b4c4d;
+    padding: 10px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
 }
 
 .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:rgb(139, 139, 139);
-    margin-bottom:0;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
 }
 /* Credit to https://epicbootstrap.com/snippets/footer-basic */
 
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -119,11 +143,13 @@ p { word-break: normal }
 
 .fa-github {
     font-size: 40px;
+    margin: auto 0;
+    color: #000000;
 }
   
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* Custom Section */
