@@ -43,10 +43,21 @@ function App() {
         <div class="row-a">
           <div class="column-a">
             <p class="intro-header">We are the future of banking.</p>
-            <p class="intro-paragraph">The only interest you will be getting here is our passion to take your money and we will stop at nothing, until our goals are achieved. </p>
+            <p class="intro-paragraph">The only interest you will be getting here is our interest in taking your money and we will stop at nothing until that happens.                                        
+                    <br></br><br></br> Check us out today to see how we replaced the highly demanded toilet paper with the three seashells. Oh, we also have that banking stuff as well.</p>
           </div>
-          <div class="column-a">
-
+          <div class="column-b">
+            <div id="slideshow">
+              <div>
+                <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg" alt="test"></img>
+              </div>
+              <div>
+                <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg" alt="TEST"></img>
+              </div>
+              <div>
+                Pretty cool eh? This slide is proof the content can be anything.
+              </div>
+            </div>
           </div>
         </div>
       </div>
