@@ -1,9 +1,11 @@
 import './App.css'
+import coins from './images/coins.jpg';
 
 function App() {
   const year = new Date().getFullYear();
 
   return (
+
     <div className="App">
       <div class="logo">
         <h1 id="bank">💸 Bankadia</h1>
@@ -47,19 +49,10 @@ function App() {
                     <br></br><br></br> Check us out today to see how we replaced the highly demanded toilet paper with the three seashells. Oh, we also have that banking stuff as well.</p>
           </div>
           <div class="column-b">
-            <div id="slideshow">
-              <div>
-                <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg" alt="test"></img>
-              </div>
-              <div>
-                <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg" alt="TEST"></img>
-              </div>
-              <div>
-                Pretty cool eh? This slide is proof the content can be anything.
-              </div>
-            </div>
+            <img class="coins" src={coins} alt="coins"></img>
           </div>
         </div>
+        <div id="slideshow"></div>
       </div>
 
       <div class="footer-basic">
@@ -67,7 +60,7 @@ function App() {
           <center><a href="https://github.com/ywuhub" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a></center>
           <p class="copyright">Bankadia LLC © {year}| Created by Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
         </footer>
-    </div> 
+      </div>
     </div>
   );
 }
