@@ -4,8 +4,16 @@ import coins from './images/coins.jpg';
 function App() {
   const year = new Date().getFullYear();
 
-  return (
+  var greeting = [
+    "We buy high, so you can sell low.",
+    "If money doesn't grow on trees, then why do banks have branches?",
+    "We are not like the other banks. We are worse.",
+    "Now opening 25/7."
+  ]
 
+  var index = Math.floor(Math.random() * (greeting.length-1));
+
+  return (
     <div className="App">
       <div class="logo">
         <h1 id="bank">💸 Bankadia</h1>
@@ -23,7 +31,7 @@ function App() {
         <div class="row">
           <div class="column">
             <h3 class="greeting bubbles">Welcome to Bankadia!</h3>
-            <blockquote class="quote">We buy high, so you can sell low.</blockquote>
+            <blockquote class="quote">{greeting[index]}</blockquote>
           </div>
           <div class="column-login">
             <div class="login">
