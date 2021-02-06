@@ -25,6 +25,23 @@ function App() {
             <h3 class="greeting bubbles">Welcome to Bankadia!</h3>
             <blockquote class="quote">We buy high, so you can sell low.</blockquote>
           </div>
+          <div class="column-login">
+            <div class="login">
+              <form>
+                <select name="accounts" id="accounts">
+                  <option value="personal">Personal</option>
+                  <option value="business">Business</option>
+                  <option value="investing">Investing</option>
+                </select>
+                <br></br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" value="John"></input>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="Doe"></input>
+                <input type="submit" value="Submit"></input>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
