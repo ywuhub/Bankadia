@@ -205,6 +205,8 @@ p { word-break: normal }
 .rate-row {
     text-align: center;
     padding-bottom: 50px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .rate-row:after {
