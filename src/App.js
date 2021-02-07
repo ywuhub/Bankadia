@@ -1,5 +1,9 @@
 import './App.css'
 import coins from './images/coins.jpg';
+import creditcard from './images/credit-card.svg';
+import homeloan from './images/home-loan.svg';
+import piggybank from './images/piggy-bank.svg';
+import termdeposit from './images/term-deposit.svg';
 
 function App() {
   const year = new Date().getFullYear();
@@ -8,7 +12,8 @@ function App() {
     "We buy high, so you can sell low.",
     "If money doesn't grow on trees, then why do banks have branches?",
     "We are not like the other banks. We are worse.",
-    "Now opening 25/7."
+    "Now opening 25/7.",
+    "Ask us about our interest free savings account."
   ]
 
   var index = Math.floor(Math.random() * (greeting.length-1));
@@ -82,8 +87,30 @@ function App() {
 
       <div class="rates">
         <p class="rates-title">Our Competitive Rates</p>
-        <hr></hr>
-
+        <hr class="seperator"></hr>
+        <br></br>
+        <div class="rate-row">
+          <div class="rate-col">
+            <p class="rate-title">Savings</p>
+            <img class="rate-icons" src={piggybank} alt="Savings Rate"></img>
+            <p class="rate-text">0.99% p.a.</p>
+         </div>
+          <div class="rate-col">
+            <p class="rate-title">Term Deposit</p>
+            <img class="rate-icons" src={termdeposit} alt="Term Deposit Rate"></img>
+            <p class="rate-text">3.99% p.a.</p>
+          </div>
+          <div class="rate-col">
+            <p class="rate-title">Home Loan</p>
+            <img class="rate-icons" src={homeloan} alt="Term Deposit Rate"></img>
+            <p class="rate-text">5.99% p.a.</p>
+          </div>
+          <div class="rate-col">
+            <p class="rate-title">Credit Card</p>
+            <img class="rate-icons" src={creditcard} alt="Term Deposit Rate"></img>
+            <p class="rate-text">6.66% p.a.</p>
+          </div>
+        </div>
       </div>
 
       <div class="footer-basic">

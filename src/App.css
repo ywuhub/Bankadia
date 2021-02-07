@@ -198,6 +198,46 @@ p { word-break: normal }
     text-align: center;
 }
 
+.seperator {
+    width: 35%;
+}
+
+.rate-row {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.rate-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rate-col {
+    float: left;
+    width: 25%;
+}
+
+.rate-title {
+    font-size: 25px;
+}
+
+.rate-text {
+    font-size: 25px;
+    color: rgb(0, 184, 0);
+}
+
+@media screen and (max-width: 600px) {
+    .rate-col {
+      width: 100%;
+    }
+}
+
+.rate-icons {
+    height: 70px;
+    width: 70px;
+}
+
 /* Footer Section */
 .footer-basic {
     padding: 10px 0;
