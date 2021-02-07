@@ -34,20 +34,20 @@ function App() {
             <blockquote class="quote">{greeting[index]}</blockquote>
           </div>
           <div class="column-login">
-            <div class="login">
+            <div class="members">
               <form>
-                <select name="accounts" id="accounts">
+                <select name="account" id="account">
                   <option value="personal">Personal</option>
                   <option value="business">Business</option>
                   <option value="investing">Investing</option>
                 </select>
                 <br></br>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" value="John"></input>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" value="Doe"></input>
-                <input type="submit" value="Submit"></input>
+                <input class="fields" type="text" id="username" name="username" placeholder="Username"></input><br></br>
+                <input class="fields" type="text" id="password" name="password" placeholder="Password"></input><br></br>
+                <input class="signin" type="submit" value="Login"></input>
+                <input class="register" type="button" value="Create Account"></input>
               </form>
+              <a href="#forgot_password" target="_blank">Forgot Password?</a>
             </div>
           </div>
         </div>
@@ -78,6 +78,12 @@ function App() {
           </div>
         </div>
         <div id="slideshow"></div>
+      </div>
+
+      <div class="rates">
+        <p class="rates-title">Our Competitive Rates</p>
+        <hr></hr>
+
       </div>
 
       <div class="footer-basic">
