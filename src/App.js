@@ -5,9 +5,11 @@ import homeloan from './images/home-loan.svg';
 import piggybank from './images/piggy-bank.svg';
 import termdeposit from './images/term-deposit.svg';
 
-function App() {
-  const year = new Date().getFullYear();
+// Import Componments
+import Header from './header.js'
+import Footer from './footer.js';
 
+function App() {
   var greeting = [
     "We buy high, so you can sell low.",
     "If money doesn't grow on trees, then why do banks have branches?",
@@ -20,17 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <div class="logo">
-        <h1 id="bank">💸 Bankadia</h1>
-      </div>
-      
-      <div class="topnav">
-        <a href="#personal">Personal</a>
-        <a href="#business">Business</a>
-        <a href="#investing">Investing</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
+      <Header />
 
       <div class="login">
         <div class="row">
@@ -113,12 +105,7 @@ function App() {
         </div>
       </div>
 
-      <div class="footer-basic">
-        <footer>
-          <center><a href="https://github.com/ywuhub" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a></center>
-          <p class="copyright">Bankadia LLC © {year}| Created by Allan Wu | Inspired By <a href="https://www.youtube.com/channel/UCm22FAXZMw1BaWeFszZxUKw" target="_blank" rel="noreferrer">Kitboga</a></p>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,35 @@
+/* Footer Section */
+.footer-basic {
+    padding: 10px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic .copyright {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-github {
+    font-size: 40px;
+    margin: auto 0;
+    color: #000000;
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
