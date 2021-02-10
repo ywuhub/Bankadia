@@ -1,5 +1,7 @@
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import './header.css';
+
+import Contact from "./contact.js"
 
 function Header() {
     return (
@@ -8,15 +10,22 @@ function Header() {
                 <h1 id="bank">💸 Bankadia</h1>
             </div>
                 
-            <div class="topnav">
-                <BrowserRouter>
+            <BrowserRouter>
+                <div class="topnav">
+                    <Link to="">Home</Link>
                     <Link to="">Personal</Link>
                     <Link to="">Business</Link>
                     <Link to="">Investing</Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="">About</Link>
-                </BrowserRouter>
-            </div>
+
+                    <Switch>
+                        <Route exact path="/contact" component={Contact}>
+                            <Contact />
+                        </Route>
+                    </Switch>
+                </div>
+            </BrowserRouter>
         </div>
     )
 }
