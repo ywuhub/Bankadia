@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import './header.css';
 
+import App from "./App.js"
 import Contact from "./contact.js"
 
 function Header() {
@@ -12,18 +13,19 @@ function Header() {
                 
             <BrowserRouter>
                 <div class="topnav">
-                    <Link to="">Home</Link>
+                    <Link to="/">Home</Link>
                     <Link to="">Personal</Link>
                     <Link to="">Business</Link>
                     <Link to="">Investing</Link>
                     <Link to="/contact">Contact</Link>
                     <Link to="">About</Link>
 
-                    <Switch>
-                        <Route exact path="/contact" component={Contact}>
-                            <Contact />
-                        </Route>
-                    </Switch>
+                    <Route exact path="/" component={App} className="contact">
+                        <Contact />
+                    </Route>
+                    <Route exact path="/contact" component={Contact} className="contact">
+                        <Contact />
+                    </Route>
                 </div>
             </BrowserRouter>
         </div>

@@ -1,7 +1,3 @@
-// Import Componments
-//import Header from './header.js'
-//import Footer from './footer.js';
-
 function Contact() {
     return (
         <div className="contact">
