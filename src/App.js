@@ -120,8 +120,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/"><Main /></Route>
+          <Route path="/contact"><Contact /></Route>
         </Switch>
       </BrowserRouter>
     </div>
