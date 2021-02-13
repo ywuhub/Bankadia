@@ -1,7 +1,5 @@
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './header.css';
-
-import Contact from "./contact.js"
 
 function Header() {
     return (
@@ -12,12 +10,12 @@ function Header() {
                 
             <BrowserRouter>
                 <div class="topnav">
-                    <Link to="/">Home</Link>
-                    <Link to="">Personal</Link>
-                    <Link to="">Business</Link>
-                    <Link to="">Investing</Link>
+                    <Link to="">Home</Link>
+                    <Link to="/personal">Personal</Link>
+                    <Link to="/business">Business</Link>
+                    <Link to="/investing">Investing</Link>
                     <Link to="/contact">Contact</Link>
-                    <Link to="">About</Link>
+                    <Link to="/about">About Us</Link>
                 </div>
             </BrowserRouter>
         </div>
