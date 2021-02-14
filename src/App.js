@@ -120,7 +120,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/"><Main /></Route>
+          <Route path=""><Main /></Route>
           <Route path="/contact"><Contact /></Route>
         </Switch>
       </BrowserRouter>
