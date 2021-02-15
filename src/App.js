@@ -11,6 +11,7 @@ import termdeposit from './images/term-deposit.svg';
 // Import Componments
 import { useRef } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Accordion from './accordian.js';
 import Modal from './modal.js';
 
 function Main() {
@@ -61,7 +62,7 @@ function Main() {
                 <p>If you think our banking options are just like our competitors, you're right, because it's all about money, money, money.</p>
               </div>
               <div class="column">
-                <p onClick={() => modal.current.open()} class="guide_anchor">Financial Help Center &#9654;</p>
+                <p onClick="" class="guide_anchor">Financial Help Center &#9654;</p>
                 <p>Learn how to navigate the world of financial jargon through our comprehensive gluten free articles.</p>
               </div>
           </div>
@@ -110,7 +111,30 @@ function Main() {
         </div>
 
         <Modal ref={modal}>
-          Hello World
+          <h1>Our Banking Products</h1>
+          <hr></hr>
+          <h2>Personal Banking</h2>
+          <h2>Business Banking</h2>
+          <h2>Investing Options</h2>
+          <div>
+     <Accordion
+       title="What is your return policy?"
+       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     />
+     <Accordion
+       title="Which languages does you support?"
+       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+     />
+     <Accordion
+       title="Can I use a custom domain?"
+       content="
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   </br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+     />
+   </div>
         </Modal>
     </div>
   )
