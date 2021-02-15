@@ -9,7 +9,9 @@ import piggybank from './images/piggy-bank.svg';
 import termdeposit from './images/term-deposit.svg';
 
 // Import Componments
+import { useRef } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Modal from './modal.js';
 
 function Main() {
   var greeting = [
@@ -21,10 +23,11 @@ function Main() {
   ]
 
   var index = Math.floor(Math.random() * (greeting.length-1));
+  
+  const modal = useRef(null);
 
   return (
     <div className="main">
-
       <div class="login">
           <div class="row">
             <div class="column">
@@ -54,11 +57,11 @@ function Main() {
       <div class="guide">
           <div class="row">
               <div class="column">
-                <a href="#account-options" class="guide_anchor">Banking Options &#9654;</a>
+                <p onClick={() => modal.current.open()} class="guide_anchor">Banking Options &#9654;</p>
                 <p>If you think our banking options are just like our competitors, you're right, because it's all about money, money, money.</p>
               </div>
               <div class="column">
-                <a href="#help-center" class="guide_anchor">Financial Help Center &#9654;</a>
+                <p onClick={() => modal.current.open()} class="guide_anchor">Financial Help Center &#9654;</p>
                 <p>Learn how to navigate the world of financial jargon through our comprehensive gluten free articles.</p>
               </div>
           </div>
@@ -77,7 +80,7 @@ function Main() {
           </div>
           <div id="slideshow"></div>
         </div>
-
+        
         <div class="rates">
           <p class="rates-title">Our Competitive Rates</p>
           <hr class="seperator"></hr>
@@ -105,6 +108,10 @@ function Main() {
             </div>
           </div>
         </div>
+
+        <Modal ref={modal}>
+          Hello World
+        </Modal>
     </div>
   )
 }
