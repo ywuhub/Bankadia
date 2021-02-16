@@ -26,6 +26,7 @@ function Main() {
   var index = Math.floor(Math.random() * (greeting.length-1));
   
   const modal = useRef(null);
+  const modal_two = useRef(null);
 
   return (
     <div className="main">
@@ -62,7 +63,7 @@ function Main() {
                 <p>If you think our banking options are just like our competitors, you're right, because it's all about money, money, money.</p>
               </div>
               <div class="column">
-                <p onClick="" class="guide_anchor">Financial Help Center &#9654;</p>
+                <p onClick={() => modal_two.current.open()} class="guide_anchor">Financial Help Center &#9654;</p>
                 <p>Learn how to navigate the world of financial jargon through our comprehensive gluten free articles.</p>
               </div>
           </div>
@@ -111,7 +112,7 @@ function Main() {
         </div>
 
         <Modal ref={modal}>
-          <center><h1>Our Banking Products</h1></center>
+          <center><h1>Our Banking Options</h1></center>
           <hr></hr>
           <h2>Personal Banking</h2>
           <div>
@@ -134,14 +135,14 @@ function Main() {
               content="<p>A high interest savings account is a savings account that offers an extremely competitive interest rate to help your savings grow. 
               All high interest savings accounts have variable interest rates, meaning your rates could go up or down over time, 
               usually in response to changes to the Reserve Bank cash rate.</p>
-              <b>Current Rate: 1.99% p.a.</b>"
+              <b>Savings Rate: 1.99% p.a.</b>"
             />
             <Accordion
               title="Term Deposit"
               content="<p>A term deposit is a cash investment held at a financial institution. Your money is invested for an agreed rate of interest over a fixed amount of time, or term. Term deposits can be invested into a bank, building society or credit union.</p>
               <p>When the money is deposited, the customer understands that the money is there for the pre-determined period which usually ranges from 1 month to 5 years and the interest rate is guaranteed not to change for that nominated period of time.  Typically, the money can only be withdrawn at the end of the period – or earlier with a penalty attached.</p>
               <p>Term deposits are popular with investors who prefer capital security and a set return as opposed to the fluctuations of, say, the share market. Many investors also use term deposits as a part of their investment mix.</p>
-              <b>Current Rate: 3.99% p.a.</b>"
+              <b>Term Rate: 3.99% p.a. for 10 Years</b>"
             />
             <Accordion
               title="Home Loan"
@@ -149,11 +150,48 @@ function Main() {
               Typically a home loan will be a 25 or 30 year term, with regular repayment amounts fortnightly or monthly that are designed to pay off the loan over the contracted term.</p>
               <p>The loan is secured against your property so if you are unable to continue paying the loan, the lender may ultimately require you to sell the property to settle the debt. 
               Given property prices in Australia, a home loan is realistically the way by which the majority of people will afford to buy a house.</p>
-              <b>Current Rate: 5.99% p.a.</b>"
+              <b>Fee Rate: 5.99% p.a.</b>"
             />
           </div>
           <h2>Business Banking</h2>
-          <h2>Investing Options</h2>
+            <Accordion
+              title="Business Transaction Account"
+              content="<p>An everyday business transaction account with a no monthly account fee option and a linked Business Visa Debit card to help you manage your expenses. Make unlimited electronic transactions for free and receive customised alerts regarding your balances. Flexibility to switch to the $10 monthly account fee option and get 20 assisted transactions per month.</p>
+              <ul>
+                <li>Monthly account fee: $0</li>
+                <li>Linked debit card: Visa</li>
+                <li>Assisted transaction fee: $3</li>
+              </ul>"
+            />
+            <Accordion
+              title="Business High Interest Account"
+              content="<p>A business savings account is an account that allows you to earn interest on your business funds while you're not using them. It's like a regular high interest savings account, except it's for business use rather than personal use. A business savings account will also often have a minimum balance requirement that needs to be met in order to earn interest, and this balance requirement is usually higher than those on personal savings accounts.</p>
+              <p>By linking the business savings account to a business transaction account, you can easily transfer money back and forth when you need to. This way your funds will be working for you while you're not using them, generating passive income. A lot of business savings accounts offer tiered interest rates, meaning the higher your balance the more interest you can earn.</p>
+              <b>Savings Rate: 4.99% p.a.</b>"
+            />
+            <Accordion
+              title="Business Term Deposit"
+              content="<p>Planning a major business purchase? Have you received a lump sum of money that you're keen to put away? A term deposit can be an ideal way to save for a specific goal, as it's enables you to invest and get a guaranteed return, which will be based on the amount you invest and the interest rate on the day you open your term deposit.</p>
+              <p>Instead of leaving your money in a transaction account earning little or no interest (and where you may be tempted to use it), why not put your funds away for a period of time that you get to choose and which will earn you a return at the end? This could help you achieve your business goals faster, whether it’s buying a new asset for your business, or simply knowing you have the cash for future opportunities.</p>
+              <b>Term Rate: 5.99% p.a. for 10 Years</b>"
+            />
+          <h2>Investing Products</h2>
+            <Accordion
+                title="Share Trading Account"
+                content="<p>Trade securities using a share trading account. This type of account has features that will appeal to traders, such as free brokerage. 
+                A share trading investment account can be tailored to suit your needs, for example, an investment account can easily be made into an investment loan if you need more capital.</p>
+                <b>Savings Rate: 0.99% p.a.</b>
+                "
+              />
+              <Accordion
+                title="Business High Interest Account"
+                content="<p>A margin loan gives you a line of credit to use to invest. Margin loans can be secured to a property or other asset such as a share portfolio. Margin loans can be used for certain investments but not others. You can use a margin loan to invest in common types of investment accounts like what’s discussed on this page</p>
+                <b>Fee Rate: 10.99% p.a.</b>"
+              />
+        </Modal>
+
+        <Modal ref={modal_two}>
+          <h1>Hello World</h1>
         </Modal>
     </div>
   )
