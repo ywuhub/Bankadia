@@ -72,6 +72,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 100%;
+    max-width: 75%;
     padding: 15px 20px;
     color: #000000;
 }

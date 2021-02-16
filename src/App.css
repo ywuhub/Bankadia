@@ -231,5 +231,7 @@ p { word-break: normal }
     width: 70px;
 }
 
-/* Model Section */
-
+/* Modal Section */
+.modal-style {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

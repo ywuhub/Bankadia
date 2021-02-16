@@ -90,7 +90,7 @@ function Main() {
             <div class="rate-col">
               <p class="rate-title">Savings</p>
               <img class="rate-icons" src={piggybank} alt="Savings Rate"></img>
-              <p class="rate-text">0.99% p.a.</p>
+              <p class="rate-text">1.99% p.a.</p>
           </div>
             <div class="rate-col">
               <p class="rate-title">Term Deposit</p>
@@ -111,30 +111,49 @@ function Main() {
         </div>
 
         <Modal ref={modal}>
-          <h1>Our Banking Products</h1>
+          <center><h1>Our Banking Products</h1></center>
           <hr></hr>
           <h2>Personal Banking</h2>
+          <div>
+            <Accordion
+              title="Transaction Account"
+              content="<p>A transaction account is an everyday account used to manage your finances. You can deposit your income, and withdraw money to spend it on the things you need in a variety of ways:</p>
+                <ul>
+                  <li>Debit card (EFTPOS, payWave/PayPass)</li>
+                  <li>Electronic payments and online shopping</li>
+                  <li>Digital wallet (e.g. Google Wallet, Samsung Pay, Apple Pay)</li>
+                  <li>ATMs</li>
+                  <li>Direct debit</li>
+                  <li>Bpay</li>
+                  <li>Branch access</li>
+                  <li>Cheques</li>
+              </ul>"
+            />
+            <Accordion
+              title="High Interest Savings Account"
+              content="<p>A high interest savings account is a savings account that offers an extremely competitive interest rate to help your savings grow. 
+              All high interest savings accounts have variable interest rates, meaning your rates could go up or down over time, 
+              usually in response to changes to the Reserve Bank cash rate.</p>
+              <b>Current Rate: 1.99% p.a.</b>"
+            />
+            <Accordion
+              title="Term Deposit"
+              content="<p>A term deposit is a cash investment held at a financial institution. Your money is invested for an agreed rate of interest over a fixed amount of time, or term. Term deposits can be invested into a bank, building society or credit union.</p>
+              <p>When the money is deposited, the customer understands that the money is there for the pre-determined period which usually ranges from 1 month to 5 years and the interest rate is guaranteed not to change for that nominated period of time.  Typically, the money can only be withdrawn at the end of the period – or earlier with a penalty attached.</p>
+              <p>Term deposits are popular with investors who prefer capital security and a set return as opposed to the fluctuations of, say, the share market. Many investors also use term deposits as a part of their investment mix.</p>
+              <b>Current Rate: 3.99% p.a.</b>"
+            />
+            <Accordion
+              title="Home Loan"
+              content="<p>A “home loan” or “mortgage” is a loan advanced to you by a financial institution in return for security over the property you are using the loan to buy. 
+              Typically a home loan will be a 25 or 30 year term, with regular repayment amounts fortnightly or monthly that are designed to pay off the loan over the contracted term.</p>
+              <p>The loan is secured against your property so if you are unable to continue paying the loan, the lender may ultimately require you to sell the property to settle the debt. 
+              Given property prices in Australia, a home loan is realistically the way by which the majority of people will afford to buy a house.</p>
+              <b>Current Rate: 5.99% p.a.</b>"
+            />
+          </div>
           <h2>Business Banking</h2>
           <h2>Investing Options</h2>
-          <div>
-     <Accordion
-       title="What is your return policy?"
-       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-     />
-     <Accordion
-       title="Which languages does you support?"
-       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-     />
-     <Accordion
-       title="Can I use a custom domain?"
-       content="
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-   </br>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-     />
-   </div>
         </Modal>
     </div>
   )
