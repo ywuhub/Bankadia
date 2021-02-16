@@ -1,3 +1,9 @@
+/* 
+  Author: Victor de la Fouchardière
+  Link: https://dev.to/viclafouch/build-a-complete-modal-component-with-react-hooks-2fk8
+  Description: Modals in React JS
+*/
+
 .modal {
     position: fixed;
     overflow: hidden;

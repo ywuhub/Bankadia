@@ -11,7 +11,7 @@ import termdeposit from './images/term-deposit.svg';
 // Import Componments
 import { useRef } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Accordion from './accordian.js';
+import Accordion from './accordion.js';
 import Modal from './modal.js';
 
 function Main() {

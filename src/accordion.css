@@ -1,3 +1,11 @@
+/* 
+    Author: Hunter Becton
+    Link: https://medium.com/skillthrive/build-a-react-accordion-component-from-scratch-using-react-hooks-a71d3d91324b
+    Description: Collaspsible List in React JS
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+
 /* Style the accordion section */
 .accordion__section {
     display: flex;
