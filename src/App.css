@@ -235,3 +235,11 @@ p { word-break: normal }
 .modal-style {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+li{
+    margin-top: 10px;
+}
+
+li:first-child {
+    margin-top:0;
+}
