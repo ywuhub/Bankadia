@@ -1,6 +1,6 @@
 // Import Styles
 import './App.css'
-
+  
 // Import Graphics
 import coins from './images/coins.jpg';
 import creditcard from './images/credit-card.svg';
@@ -10,9 +10,10 @@ import termdeposit from './images/term-deposit.svg';
 
 // Import Componments
 import { useRef } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Accordion from './accordion.js';
 import Modal from './modal.js';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { history } from './header.js'
 
 function Main() {
   var greeting = [
@@ -253,9 +254,13 @@ function Main() {
   )
 }
 
+function DirectTo(nextPage) {
+  history.push("./" + nextPage);
+}
+
 function Contact() {
   return (
-    <h1>HELLO WORLD</h1>
+      <h1>Hello World.</h1>
   )
 }
 
@@ -264,8 +269,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path=""><Main /></Route>
-          <Route path="/contact"><Contact /></Route>
+          <Route path="/contact" onClick={DirectTo("contact")} component={Contact}/>;
+          <Route path="/" onClick={DirectTo("")} component={Main}/>;
         </Switch>
       </BrowserRouter>
     </div>
