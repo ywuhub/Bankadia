@@ -10,8 +10,8 @@ import termdeposit from './images/term-deposit.svg';
 
 // Import Componments
 import { useRef } from 'react';
-import Accordion from './accordion.js';
-import Modal from './modal.js';
+import Accordion from './helpers/accordion.js';
+import Modal from './helpers/modal.js';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { history } from './header.js'
 
