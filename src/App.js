@@ -10,11 +10,13 @@ import termdeposit from './images/term-deposit.svg';
 
 // Import Componments
 import { useRef } from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
+
 import Accordion from './helpers/accordion.js';
 import Modal from './helpers/modal.js';
-import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom';
-import Header from './header';
-import Footer from './footer';
+import Header from './header.js';
+import Footer from './footer.js';
+import Contact from './contact.js'
 
 function Main() {
   var greeting = [
@@ -255,19 +257,17 @@ function Main() {
   )
 }
 
-function Contact() {
-  return (
-    <h1>Hello World!</h1>
-  )
-}
-
 function App() {
   return (
     <div className="App">
       <Header/>
         <Switch>
           <Route exact path ="/" component={withRouter(Main)}/>
+          <Route path ="/personal"/>
+          <Route path ="/business"/>
+          <Route path ="/investing"/>
           <Route path ="/contact" component={withRouter(Contact)}/>
+          <Route path ="/about"/>
         </Switch>
       <Footer/>
     </div>
