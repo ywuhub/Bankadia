@@ -12,8 +12,9 @@ import termdeposit from './images/term-deposit.svg';
 import { useRef } from 'react';
 import Accordion from './helpers/accordion.js';
 import Modal from './helpers/modal.js';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { history } from './header.js'
+import { BrowserRouter, Route, Switch, withRouter } from 'react-router-dom';
+import Header from './header';
+import Footer from './footer';
 
 function Main() {
   var greeting = [
@@ -254,25 +255,21 @@ function Main() {
   )
 }
 
-function DirectTo(nextPage) {
-  history.push("./" + nextPage);
-}
-
 function Contact() {
   return (
-      <h1>Hello World.</h1>
+    <h1>Hello World!</h1>
   )
 }
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Header/>
         <Switch>
-          <Route path="/contact" onClick={DirectTo("contact")} component={Contact}/>;
-          <Route path="/" onClick={DirectTo("")} component={Main}/>;
+          <Route exact path ="/" component={withRouter(Main)}/>
+          <Route path ="/contact" component={withRouter(Contact)}/>
         </Switch>
-      </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
