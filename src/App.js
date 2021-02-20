@@ -16,7 +16,8 @@ import Accordion from './helpers/accordion.js';
 import Modal from './helpers/modal.js';
 import Header from './header.js';
 import Footer from './footer.js';
-import Contact from './contact.js'
+import Contact from './contact.js';
+import About from './about.js';
 
 function Main() {
   var greeting = [
@@ -261,14 +262,14 @@ function App() {
   return (
     <div className="App">
       <Header/>
-        <Switch>
-          <Route exact path ="/" component={withRouter(Main)}/>
-          <Route path ="/personal"/>
-          <Route path ="/business"/>
-          <Route path ="/investing"/>
-          <Route path ="/contact" component={withRouter(Contact)}/>
-          <Route path ="/about"/>
-        </Switch>
+      <Switch>
+        <Route exact path ="/" component={withRouter(Main)}/>
+        <Route path ="/personal"/>
+        <Route path ="/business"/>
+        <Route path ="/investing"/>
+        <Route path ="/contact" component={withRouter(Contact)}/>
+        <Route path ="/about" component={withRouter(About)} />
+      </Switch>
       <Footer/>
     </div>
   );
