@@ -5,7 +5,7 @@ function Business() {
         <div className="product-banking">
             <div class="product-header">
                 <h1>Business Banking</h1>
-                <p>Our everyday bank accounts are packed full of flavours and antioxidants to help you manage and grow your money</p>
+                <p>Expertise, insights, technology and products to support your business.</p>
             </div>
 
             <div class="product-body">
@@ -25,7 +25,7 @@ function Business() {
                 <h1>Features</h1>
                 <div class="product-row">
                     <div class="product-col">
-                        <h3>Business Transaction Accounts</h3>
+                        <h3>Business Transaction Account</h3>
                         <div class="product-content">
                             <p>An everyday bank account with a linked Business Visa debit card - separating business from personal spending.</p>
                             <p>Switch between $0 and $10 monthly account fee options depending on how you use your account. With flexibility to switch between the two options at any time.</p>

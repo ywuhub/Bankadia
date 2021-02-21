@@ -33,6 +33,12 @@
     margin: 25px;
 }
 
+.product-col-two {
+    float: left;
+    width: 40%;
+    margin: 25px;
+}
+
 .product-row {
     padding-left: 13%;
 }

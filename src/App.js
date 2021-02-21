@@ -18,6 +18,7 @@ import Header from './header.js';
 import Footer from './footer.js';
 import Personal from './personal.js';
 import Business from './business.js';
+import Investing from './investing.js';
 import Contact from './contact.js';
 import About from './about.js';
 
@@ -268,7 +269,7 @@ function App() {
         <Route exact path ="/" component={withRouter(Main)}/>
         <Route path ="/personal" component={withRouter(Personal)}/>
         <Route path ="/business" component={withRouter(Business)}/>
-        <Route path ="/investing"/>
+        <Route path ="/investing" component={withRouter(Investing)}/>
         <Route path ="/contact" component={withRouter(Contact)}/>
         <Route path ="/about" component={withRouter(About)} />
       </Switch>

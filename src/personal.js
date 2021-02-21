@@ -22,15 +22,21 @@ function Personal() {
                 <div class="product-row">
                     <div class="product-col">
                         <h3>Transaction Accounts</h3>
-                        <p>Transaction accounts designed to help you manage and access your money securely and conveniently.</p>
-                    </div>
+                        <div class="product-content">
+                            <p>Transaction accounts designed to help you manage and access your money securely and conveniently.</p>
+                        </div> 
+                   </div>
                     <div class="product-col">
                         <h3>High Interest Savings Accounts</h3>
-                        <p>Choose from savings accounts designed to support your long and short term savings goals that can reward you with a competitive interest rate.</p>
+                        <div class="product-content">
+                            <p>Choose from savings accounts designed to support your long and short term savings goals that can reward you with a competitive interest rate.</p>
+                        </div>
                     </div>
                     <div class="product-col">
                         <h3>Term Deposits</h3>
-                        <p>Know exactly what your return will be with the certainty of a fixed interest rate and a choice of different terms.</p>
+                        <div class="product-content">
+                            <p>Know exactly what your return will be with the certainty of a fixed interest rate and a choice of different terms.</p>
+                        </div>
                     </div>
                 </div>
             </div>
