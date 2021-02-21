@@ -17,6 +17,7 @@ import Modal from './helpers/modal.js';
 import Header from './header.js';
 import Footer from './footer.js';
 import Personal from './personal.js';
+import Business from './business.js';
 import Contact from './contact.js';
 import About from './about.js';
 
@@ -266,7 +267,7 @@ function App() {
       <Switch>
         <Route exact path ="/" component={withRouter(Main)}/>
         <Route path ="/personal" component={withRouter(Personal)}/>
-        <Route path ="/business"/>
+        <Route path ="/business" component={withRouter(Business)}/>
         <Route path ="/investing"/>
         <Route path ="/contact" component={withRouter(Contact)}/>
         <Route path ="/about" component={withRouter(About)} />
