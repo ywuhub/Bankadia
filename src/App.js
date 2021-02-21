@@ -16,6 +16,7 @@ import Accordion from './helpers/accordion.js';
 import Modal from './helpers/modal.js';
 import Header from './header.js';
 import Footer from './footer.js';
+import Personal from './personal.js';
 import Contact from './contact.js';
 import About from './about.js';
 
@@ -79,7 +80,7 @@ function Main() {
             <div class="column-a">
               <p class="intro-header">We are the future of banking.</p>
               <p class="intro-paragraph">The only interest you will be getting here is our interest in taking your money and we will stop at nothing until that happens.                                        
-                      <br></br><br></br> Check us out today to see how we replaced the highly demanded toilet paper with the three seashells. Oh, we also have that banking stuff as well.</p>
+                      <br></br><br></br> Check us out today to see our fantastic range of financial products with the highest fees that will put other banks to shame.</p>
             </div>
             <div class="column-b">
               <img class="coins" src={coins} alt="coins"></img>
@@ -264,7 +265,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path ="/" component={withRouter(Main)}/>
-        <Route path ="/personal"/>
+        <Route path ="/personal" component={withRouter(Personal)}/>
         <Route path ="/business"/>
         <Route path ="/investing"/>
         <Route path ="/contact" component={withRouter(Contact)}/>

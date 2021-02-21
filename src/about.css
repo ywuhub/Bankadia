@@ -49,12 +49,6 @@
     margin: 8px;
 }
 
-.about-container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .about-container::after, .about-row::after {
     content: "";
     clear: both;

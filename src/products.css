@@ -1,0 +1,43 @@
+.product-header{
+    padding: 25px;
+    background-color: rgb(114, 114, 114);
+    text-align: center;
+    color: white;
+}
+
+.product-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.product-para {
+    padding-left: 25%;
+    text-align: left;
+    width: 50%;
+}
+
+.product-line {
+    width: 25%;
+}
+
+.product-features {
+    padding: 25px;
+    background-color: #fff7ea;
+    text-align: center;
+}
+
+.product-col {
+    float: left;
+    width: 25%;
+    margin: 25px;
+}
+
+.product-row {
+    padding-left: 13%;
+}
+
+.product-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
