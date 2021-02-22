@@ -10,7 +10,7 @@ import termdeposit from './images/term-deposit.svg';
 
 // Import Componments
 import { useRef } from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch, withRouter, Link } from 'react-router-dom';
 
 import Accordion from './helpers/accordion.js';
 import Modal from './helpers/modal.js';
@@ -21,6 +21,7 @@ import Business from './business.js';
 import Investing from './investing.js';
 import Contact from './contact.js';
 import About from './about.js';
+import ForgotPassword from './forgotpassword.js'
 
 function Main() {
   var greeting = [
@@ -58,7 +59,7 @@ function Main() {
                   <input class="signin" type="submit" value="Login"></input>
                   <input class="register" type="button" value="Create Account"></input>
                 </form>
-                <a href="#forgot_password" target="_blank">Forgot Password?</a>
+                <Link to="/forgot_password">Forgot Password?</Link>
               </div>
             </div>
          </div>
@@ -271,7 +272,8 @@ function App() {
         <Route path ="/business" component={withRouter(Business)}/>
         <Route path ="/investing" component={withRouter(Investing)}/>
         <Route path ="/contact" component={withRouter(Contact)}/>
-        <Route path ="/about" component={withRouter(About)} />
+        <Route path ="/about" component={withRouter(About)}/>
+        <Route path ="/forgot_password" component={withRouter(ForgotPassword)} />
       </Switch>
       <Footer/>
     </div>
