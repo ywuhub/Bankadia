@@ -11,8 +11,22 @@ function Register() {
             
             <div class="register-form">
                 <form>
-                    <h2>Account Opening Form</h2>
-                    <hr class="register-line"></hr>
+                    <h2>New Bank Account Form</h2>
+                    <fieldset>
+                        <legend>
+                            <h3>Account Details</h3>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Personal Details</h3>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Terms and Confirmation</h3>
+                        </legend>
+                    </fieldset>
                 </form>
             </div>
         </div>
