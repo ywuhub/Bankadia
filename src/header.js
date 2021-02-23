@@ -6,7 +6,7 @@ function Header() {
     return (
         <div className="header">
             <div class="logo">
-                <h1 id="bank">💸 Bankadia</h1>
+                <h1 id="bank"><Link to="/" id="bank-link">💸 Bankadia</Link></h1>
             </div>
 
             <div class="topnav">

@@ -21,6 +21,7 @@ import Business from './business.js';
 import Investing from './investing.js';
 import Contact from './contact.js';
 import About from './about.js';
+import Register from './registration.js';
 import ForgotPassword from './forgotpassword.js'
 
 function Main() {
@@ -57,7 +58,7 @@ function Main() {
                   <input class="fields" type="text" id="username" name="username" placeholder="Username"></input><br></br>
                   <input class="fields" type="text" id="password" name="password" placeholder="Password"></input><br></br>
                   <input class="signin" type="submit" value="Login"></input>
-                  <input class="register" type="button" value="Create Account"></input>
+                  <Link to="/register" class="register">Register</Link>
                 </form>
                 <Link to="/forgot_password">Forgot Password?</Link>
               </div>
@@ -273,7 +274,8 @@ function App() {
         <Route path ="/investing" component={withRouter(Investing)}/>
         <Route path ="/contact" component={withRouter(Contact)}/>
         <Route path ="/about" component={withRouter(About)}/>
-        <Route path ="/forgot_password" component={withRouter(ForgotPassword)} />
+        <Route path ="/forgot_password" component={withRouter(ForgotPassword)}/>
+        <Route path ="/register" component={withRouter(Register)}/>
       </Switch>
       <Footer/>
     </div>

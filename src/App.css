@@ -128,11 +128,13 @@ select {
     background-color: #f44336;
     border: none;
     color: white;
-    padding: 15px;
+    padding: 10px 15px 15px 15px;
+    width: 31%;
     margin-top: 10px;
     margin-left: 7px;
     text-align: center;
     display: inline-block;
+    text-decoration: none;
 }
 
 .register:hover {

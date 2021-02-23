@@ -11,3 +11,12 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#bank-link {
+    text-decoration: none;
+}
+
+#bank-link:hover, #bank-link:visited {
+    color: white;
+}
+

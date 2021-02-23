@@ -1,0 +1,14 @@
+.register-header {
+    text-align: center;
+    background-color: rgb(230, 184, 34);
+    color: white;
+    padding: 20px;
+}
+
+.register-form {
+    text-align: center;
+}
+
+.register-line {
+    width: 35%;
+}
