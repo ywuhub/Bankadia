@@ -17,3 +17,20 @@
 #prefix {
     width: 40px;
 }
+
+.fieldset {
+    border: none;
+    border-top: 1px solid #8ebf42;
+}
+
+.account-details {
+    margin-right: 10%;
+}
+
+.account_label{
+    display:inline-block;
+    width:200px;
+    margin-right:10px;
+    text-align:right;
+}
+    
