@@ -33,4 +33,21 @@
     margin-right:10px;
     text-align:right;
 }
-    
+
+.register-col:first-child {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.register-col:last-child {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.register-col:after {
+    content: "";
+    display: table;
+    clear: both;
+}

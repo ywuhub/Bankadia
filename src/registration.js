@@ -15,16 +15,34 @@ function Register() {
                         <legend>
                             <h3>Account Details</h3>
                         </legend>
-                        <div class="account-details">                           
-                            <label for="email" class="account_label">Email:</label> <input type="text" name="email"/> <br/>
-                            <label for="password" class="account_label">Password:</label> <input type="password" name="password"/>
-                            <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password"/><br/>  
+                        <div class="account-details"> 
+                            <div class="register-row">
+                                <div class="register-col">
+                                    <label for="email" class="account_label">Email:</label> <input type="text" name="email"/><br/>
+                                </div>
+                                <div class="register-col">
+                                    <label for="password" class="account_label">Password:</label> <input type="password" name="password"/>
+                                </div>
+                            </div>
+                            <div class="register-row">
+                                <div class="register-col">
+                                    <label for="confirm_email" class="account_label">Confirm Email:</label> <input type="text" name="confirm_email"/><br/>
+                                </div>
+                                <div class="register-col">
+                                    <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password"/><br/>
+                                </div>
+                            </div>                                                 
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>
                             <h3>Personal Details</h3>
                         </legend>
+                        <div>
+                            <label for="email" class="account_label">Email:</label> <input type="text" name="email"/> <br/>
+                            <label for="password" class="account_label">Password:</label> <input type="password" name="password"/><br/>  
+                            <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password"/><br/>  
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend>
