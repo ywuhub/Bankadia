@@ -34,6 +34,16 @@
     text-align:right;
 }
 
+.register-col-long {
+    width: 100%;
+}
+
+.register-col-long {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .register-col:first-child {
     float: left;
     width: 50%;

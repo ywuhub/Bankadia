@@ -17,6 +17,16 @@ function Register() {
                         </legend>
                         <div class="account-details"> 
                             <div class="register-row">
+                                <div class="register-col-long">
+                                    <label for="account_type" class="account_label">Account Type:</label>
+                                    <select name="account_type" id="account_type">
+                                        <option value="personal">Personal</option>
+                                        <option value="business">Business</option>
+                                        <option value="investing">Investing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="register-row">
                                 <div class="register-col">
                                     <label for="email" class="account_label">Email:</label> <input type="text" name="email"/><br/>
                                 </div>
@@ -39,9 +49,8 @@ function Register() {
                             <h3>Personal Details</h3>
                         </legend>
                         <div>
-                            <label for="email" class="account_label">Email:</label> <input type="text" name="email"/> <br/>
-                            <label for="password" class="account_label">Password:</label> <input type="password" name="password"/><br/>  
-                            <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password"/><br/>  
+                            <label for="name" class="account_label">Email:</label> <input type="text" name="name"/> <br/>
+                            <label for="phone" class="account_label">Password:</label> <input type="number" name="phone"/><br/>
                         </div>
                     </fieldset>
                     <fieldset>
