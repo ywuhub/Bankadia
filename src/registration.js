@@ -48,10 +48,16 @@ function Register() {
                         <legend>
                             <h3>Personal Details</h3>
                         </legend>
-                        <div>
-                            <label for="name" class="account_label">Email:</label> <input type="text" name="name"/> <br/>
-                            <label for="phone" class="account_label">Password:</label> <input type="number" name="phone"/><br/>
-                        </div>
+                        <div class="personal-details">
+                            <div class="register-row">
+                                <div class="register-col">
+                                    <label for="fname" class="account_label">Name:</label> <input type="text" name="fname"/><br/>
+                                </div>
+                                <div class="register-col">
+                                    <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password"/><br/>
+                                </div>
+                            </div>
+                        </div>  
                     </fieldset>
                     <fieldset>
                         <legend>
