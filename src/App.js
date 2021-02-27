@@ -23,6 +23,7 @@ import Contact from './contact.js';
 import About from './about.js';
 import Register from './registration.js';
 import ForgotPassword from './forgotpassword.js'
+import Terms from './terms.js';
 
 function Main() {
   var greeting = [
@@ -272,6 +273,7 @@ function App() {
         <Route path ="/personal" component={withRouter(Personal)}/>
         <Route path ="/business" component={withRouter(Business)}/>
         <Route path ="/investing" component={withRouter(Investing)}/>
+        <Route path ="/terms" component={withRouter(Terms)}/>
         <Route path ="/contact" component={withRouter(Contact)}/>
         <Route path ="/about" component={withRouter(About)}/>
         <Route path ="/forgot_password" component={withRouter(ForgotPassword)}/>

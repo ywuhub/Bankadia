@@ -16,6 +16,7 @@ function Header() {
                 <Link to="/investing">Investing</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/about">About Us</Link>
+                <Link to="/terms">Terms & Conditions</Link>
             </div>
         </div>
     )
