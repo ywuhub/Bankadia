@@ -65,3 +65,40 @@
     display: table;
     clear: both;
 }
+
+#name_prefix {
+    width: 50px;
+    margin-right: 5px;
+}
+
+#fname {
+    margin-right: 5px;
+}
+
+#city-label, #postcode-label {
+    margin-left: 10px;
+}
+
+#state_list {
+    width: 150px;
+}
+
+.sign_up {
+    margin: 18px 0;
+    background-color: #04aa6d;
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    width: 50%;
+    height: 50px;
+    padding: 15px 40px 14px;
+    border-radius: 25px;
+    border: 0;
+    width: 400px;
+}
