@@ -1,4 +1,5 @@
 import './registration.css';
+import { Link } from 'react-router-dom';
 
 function Register() {
     return (
@@ -110,7 +111,7 @@ function Register() {
                         </legend>
                         <div class="register-col-long">
                             <input type="checkbox" id="check_1" name="check_1" value="check_1" required/>
-                            <label for="check_1"> Check this box if you agree to our <a href="/terms" target="_blank" rel="noreferrer">terms and conditions.</a></label><br/>
+                            <label for="check_1"> Check this box if you agree to our <Link to="/terms" target="_blank">terms and conditions.</Link></label><br/>
                             <input type="checkbox" id="check_2" name="check_2" value="check_2" required/>
                             <label for="check_2"> Check this box if the above information is 100% true and you agree to give us all your money if this is not the case.</label><br/>
                             <button class="sign_up"><span>Sign up for free</span></button>
