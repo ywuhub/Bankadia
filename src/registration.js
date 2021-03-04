@@ -1,7 +1,11 @@
 import './registration.css';
 import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form";
 
 function Register() {
+    const { register, handleSubmit, errors } = useForm();
+    const onSubmit = (data) => { console.log(data); };
+
     return (
         <div className="registration">
             <div class="register-header">
@@ -10,7 +14,7 @@ function Register() {
             </div>
             
             <div class="register-form">
-                <form>
+                <form onSubmit={handleSubmit(onSubmit)}>
                     <h2>New Bank Account Form</h2>
                     <fieldset>
                         <legend>
@@ -20,7 +24,7 @@ function Register() {
                             <div class="register-row">
                                 <div class="register-col-long">
                                     <label for="account_type" class="account_label">Account Type:</label>
-                                    <select name="account_type" id="account_type">
+                                    <select name="account_type" id="account_type" ref={register}>
                                         <option value="personal">Personal</option>
                                         <option value="business">Business</option>
                                         <option value="investing">Investing</option>
@@ -29,18 +33,20 @@ function Register() {
                             </div>
                             <div class="register-row">
                                 <div class="register-col">
-                                    <label for="email" class="account_label">Email:</label> <input type="text" name="email" required/><br/>
+                                    <label for="email" class="account_label">Email:</label> <input type="text" id="email" name="email" ref={register({ required : true })}/><br/>
+                                    {errors.email && 'Email is required.'}
                                 </div>
                                 <div class="register-col">
-                                    <label for="password" class="account_label">Password:</label> <input type="password" name="password" required/>
+                                    <label for="password" class="account_label">Password:</label> <input type="password" id="password" name="password" ref={register({ required : true })}/>
+                                    {errors.password && 'Password is required.'}
                                 </div>
                             </div>
                             <div class="register-row">
                                 <div class="register-col">
-                                    <label for="confirm_email" class="account_label">Confirm Email:</label> <input type="text" name="confirm_email" required/><br/>
+                                    <label for="confirm_email" class="account_label">Confirm Email:</label> <input type="text" name="confirm_email" ref={register({ required : true })}/><br/>
                                 </div>
                                 <div class="register-col">
-                                    <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password" required/><br/>
+                                    <label for="confirm_password" class="account_label">Confirm Password:</label> <input type="password" name="confirm_password" ref={register({ required : true })}/><br/>
                                 </div>
                             </div>                                                 
                         </div>
