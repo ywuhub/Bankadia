@@ -8,11 +8,11 @@ function Contact() {
                     <center><h1>Contact Us</h1></center>
                     <hr class="line"></hr>
                     <form>
-                        <label for="fname">First Name</label>
-                        <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your first name.."></input>
+                        <label for="name">Name</label>
+                        <input class="contact-input" type="text" id="name" name="name" placeholder="Your name.."></input>
 
-                        <label for="lname">Last Name</label>
-                        <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+                        <label for="email">Email</label>
+                        <input class="contact-input" type="text" id="email" name="email" placeholder="Your email.."></input>
 
                         <label for="category">Category</label>
                         <select class="contact-select" id="category" name="category">
