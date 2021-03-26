@@ -1,13 +1,29 @@
 import './contact.css'
+import { useEffect } from 'react'
 
 function Contact() {
+    useEffect( () => {
+        this.handleSubmit();
+    }, []);
+
+    const handleSubmit = (event) => {
+        const Http = new XMLHttpRequest();
+        const url='https://bankadia-api.herokuapp.com/test';
+  
+        Http.open("GET", url);
+        Http.send();
+        console.log(Http.responseText)
+
+        event.preventDefault();
+    }
+
     return(
         <div className="contact">
             <div class="contact-background">                
                 <div class="contact-form">
                     <center><h1>Contact Us</h1></center>
                     <hr class="line"></hr>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <label for="name">Name</label>
                         <input class="contact-input" type="text" id="name" name="name" placeholder="Your name.."></input>
 
