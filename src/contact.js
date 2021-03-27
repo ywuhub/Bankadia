@@ -3,18 +3,14 @@ import { useEffect } from 'react'
 
 function Contact() {
     useEffect( () => {
-        this.handleSubmit();
+        handleSubmit();
     }, []);
 
     const handleSubmit = (event) => {
-        const Http = new XMLHttpRequest();
-        const url='https://bankadia-api.herokuapp.com/test';
-  
-        Http.open("GET", url);
-        Http.send();
-        console.log(Http.responseText)
-
-        event.preventDefault();
+        const apiUrl = 'https://bankadia-api.herokuapp.com/test';
+        fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => console.log('This is your data', data['hello']));
     }
 
     return(
