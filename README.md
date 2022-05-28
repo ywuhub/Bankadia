@@ -1,5 +1,5 @@
 # Introduction
- Full Stack Banking System
+ Fully Online Banking Serive
 
 ## Deployment
  Link: <a href="https://bankadia-financials.web.app">Bankadia Website</a>
@@ -12,6 +12,3 @@
 * Frontend - HTML/CSS/JS + React JS Framework
 * Backend - Python (Flask RESTful API)
 * Database - Firebase Realtime Database (NoSQL Database)
-
-## Description 
-Coming Soon
