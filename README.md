@@ -1,4 +1,4 @@
-# Bankadia
+# Introduction
  Full Stack Banking System
 
 ## Deployment
